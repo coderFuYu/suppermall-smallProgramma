@@ -1,0 +1,9 @@
+<!--pages/task/task.wxml-->
+<text>------</text>
+<tab-contral titles="{{['衣服','裤子','围巾']}}"/>
+<button bindtap="requestBtnClick">request</button>
+<button bindtap="showToast">Toast</button>
+<button bindtap="showModal">Modal</button>
+<button bindtap="showLoading">showLoading</button>
+<button bindtap="hiddenLoading">hiddenLoading</button>
+<button bindtap="showAction">showAction</button>
