@@ -7,3 +7,12 @@
 <button bindtap="showLoading">showLoading</button>
 <button bindtap="hiddenLoading">hiddenLoading</button>
 <button bindtap="showAction">showAction</button>
+<button open-type="share">分享</button>
+<text>------------------------------</text>
+<navigator url="/pages/about/about">跳转到关于页面</navigator>
+<text>------------------------------</text>
+<navigator url="/pages/about/about" open-type="redirect">跳转到关于页面(redirect)</navigator>
+<text>------------------------------</text>
+<navigator url="/pages/index/index" open-type="switchTab">跳转到首页(switchTab)</navigator>
+<text>------------------------------</text>
+<navigator url="/pages/about/about" open-type="reLaunch">跳转到关于页面(reLaunch)</navigator>

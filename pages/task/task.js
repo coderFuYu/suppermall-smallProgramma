@@ -25,7 +25,7 @@ Page({
     //   },
     // })
   },
-  showToast(){
+  showToast() {
     wx.showToast({
       title: '加载中……',
       duration: 3000,
@@ -37,34 +37,37 @@ Page({
       // complete: (res) => {},
     })
   },
-  showModal(){
+  showModal() {
     wx.showModal({
-      title:'是否支持*****',
-      content:'hhhhh',
+      title: '是否支持*****',
+      content: 'hhhhh',
       cancelColor: 'pink',
     })
   },
-  showLoading(){
+  showLoading() {
     wx.showLoading({
       title: 'title',
     })
   },
-  hiddenLoading(){
+  hiddenLoading() {
     wx.hideLoading();
   },
-  showAction(){
+  showAction() {
     wx.showActionSheet({
-      itemList: ['相册','拍照'],
-      success:(res)=>{
+      itemList: ['相册', '拍照'],
+      success: (res) => {
         console.log(res)
       },
-      fail:(err)=>{console.log(err)}
+      fail: (err) => {
+        console.log(err)
+      }
     })
   },
-  onShareAppMessage:(option)=>{
-    return{
-      title:'你好啊',
-      path:'pages/task/task'
+  onShareAppMessage: (option) => {
+    return {
+      title: '你好啊',
+      path: 'pages/task/task',
+      imageUrl: '../../assets/img/timo.jpg'
     }
   }
 })
