@@ -1,0 +1,2 @@
+<!--pages/about/about.wxml-->
+<navigator url="/pages/task/task" open-type="switchTab">跳转到测试页面</navigator>
