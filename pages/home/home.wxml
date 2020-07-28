@@ -2,6 +2,13 @@
 <!-- 1.轮播图 -->
 <w_swiper list="{{banners}}" />
 <!-- 2.推荐数据 -->
-<w-recommend list="{{recommends}}"/>
+<w-recommend list="{{recommends}}" bind:imageLoad="handleImageLoad"/>
 <!-- 3.展示本周流行 -->
-<image src="/assets/img/home/recommend_bg.jpg" class="popular" mode="widthFix"/>
+<image src="/assets/img/home/recommend_bg.jpg" class="popular" mode="widthFix" />
+<!-- 4.tab-control -->
+<w-tab-control class="{{isTabFixed?'fixed':''}}" titles="{{titles}}" bind:tabclick="handleTabclick" id="tab-control"/>
+<w-tab-control  titles="{{titles}}" wx:if="{{isTabFixed}}"/>
+<!-- 5.展示商品数据 -->
+<w-goods goodslist="{{goods[currentType].list}}" />
+<!-- 6.返回顶部 -->
+<w-back-top wx:if="{{showBacktop}}" />
