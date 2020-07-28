@@ -8,3 +8,12 @@ export function getMultiData() {
 		url: BaseURL + "/home/multidata"
 	})
 }
+export function getGoodsData(type, page) {
+	return request({
+		url: BaseURL + "/api/m3/home/data",
+		data: {
+			type,
+			page
+		}
+	})
+}
