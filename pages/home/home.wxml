@@ -1,2 +1,7 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<!-- 1.轮播图 -->
+<w_swiper list="{{banners}}" />
+<!-- 2.推荐数据 -->
+<w-recommend list="{{recommends}}"/>
+<!-- 3.展示本周流行 -->
+<image src="/assets/img/home/recommend_bg.jpg" class="popular" mode="widthFix"/>
